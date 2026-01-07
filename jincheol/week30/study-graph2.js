@@ -6,7 +6,7 @@
  *
  * @param {number} N 컴퓨터의 수
  * @param {number} M 연결할 수 있는 선의 수
- * @param {number[][]} connects 컴퓨터 a와 b를 연결하는데 필요한 비용
+ * @param {number[][]} connects 컴퓨터 a와 b를 연결하는데 필요한 비용 [a 컴퓨터, b 컴퓨터, 비용]
  */
 const solution = (N, M, connects) => {
   connects.sort((a, b) => a[2] - b[2]); // 최소 비용으로 연결하기 위해 비용 오름차순 정렬
